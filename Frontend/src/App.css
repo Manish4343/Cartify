@@ -1,0 +1,179 @@
+/* =====================================================
+   CARTIFY APP GLOBAL STYLES
+   ===================================================== */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =====================================================
+   BUTTONS
+   ===================================================== */
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #111827;
+  outline-offset: 2px;
+}
+
+/* Keep button colors stable while pressing.
+   Do not use background/color: inherit here because it can make
+   white text disappear on dark buttons during :active. */
+button:active {
+  transform: translateY(0);
+}
+
+/* =====================================================
+   CARTIFY ACTION BUTTONS
+   ===================================================== */
+
+.cartify-action-primary,
+.cartify-action-primary:visited {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 48px !important;
+  border: 1px solid #111827 !important;
+  border-radius: 999px !important;
+  background: #111827 !important;
+  background-color: #111827 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease !important;
+}
+
+.cartify-action-primary:hover {
+  background: #374151 !important;
+  background-color: #374151 !important;
+  border-color: #374151 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, .16) !important;
+}
+
+.cartify-action-primary:active,
+.cartify-action-primary:focus,
+.cartify-action-primary:focus-visible {
+  background: #111827 !important;
+  background-color: #111827 !important;
+  border-color: #111827 !important;
+  color: #ffffff !important;
+}
+
+.cartify-action-secondary,
+.cartify-action-secondary:visited {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 48px !important;
+  border: 1px solid #d1d5db !important;
+  border-radius: 999px !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #374151 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease !important;
+}
+
+.cartify-action-secondary:hover {
+  background: #f9fafb !important;
+  background-color: #f9fafb !important;
+  border-color: #111827 !important;
+  color: #111827 !important;
+}
+
+.cartify-action-secondary:active,
+.cartify-action-secondary:focus,
+.cartify-action-secondary:focus-visible {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #111827 !important;
+  color: #111827 !important;
+}
+
+.cartify-nav-cart,
+.cartify-nav-cart:visited {
+  color: #374151 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+.cartify-nav-cart:hover,
+.cartify-nav-cart:focus,
+.cartify-nav-cart:focus-visible {
+  color: #111827 !important;
+  background: #f9fafb !important;
+  background-color: #f9fafb !important;
+}
+
+.cartify-nav-cart:active {
+  color: #111827 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+/* =====================================================
+   LINKS
+   ===================================================== */
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+input,
+textarea,
+select {
+  color: #111827;
+  background-color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* =====================================================
+   IMAGES
+   ===================================================== */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =====================================================
+   SELECTION
+   ===================================================== */
+
+::selection {
+  background: #111827;
+  color: #ffffff;
+}
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 640px) {
+  #root {
+    width: 100%;
+  }
+}
